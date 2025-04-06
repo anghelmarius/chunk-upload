@@ -223,6 +223,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     backgroundColor: '#f9f9f9',
     borderRadius: '8px',
     boxShadow: '0px 4px 6px rgba(0,0,0,0.1)',
+    marginTop: '20px'
   },
   title: {
     textAlign: 'center' as const,

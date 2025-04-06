@@ -5,7 +5,6 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <h1>Media Upload System</h1>
       <FileUploader />
     </div>
   );
