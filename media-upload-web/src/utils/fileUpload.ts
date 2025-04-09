@@ -1,6 +1,7 @@
+'use strict'
 import axios from 'axios';
 
-const CHUNK_SIZE = 1 * 1024 * 1024;
+const CHUNK_SIZE = 1 * 1024 * 1024; //1 MB
 
 export const initiateUpload = async (filename: string, fileSize: number): Promise<string | null> => {
   try {
@@ -75,7 +76,7 @@ export const finalizeUpload = async (
     console.log('Upload finalized:', response.data);
     return true;
   } catch (error) {
-    console.error('Error finalizing upload:', error);
+    console.error('Error finalizing upload:', JSON.stringify(error));
     return false;
   }
 };
